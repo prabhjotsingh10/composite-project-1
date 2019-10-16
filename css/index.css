@@ -14,7 +14,6 @@ html{
 header{
     background-color: #5D0013;
     color: whitesmoke;
-        /* margin-bottom: 0.5rem; */
 }
 
 .hello-prabhjot{
@@ -30,8 +29,6 @@ header{
 .header{
     display: flex;
     place-content: space-evenly;
-    /* border: 1px solid blueviolet; */
-    /* margin-bottom: 5px;  */
     list-style-type: none;
     
 }
@@ -59,10 +56,6 @@ header{
     font-size: 1rem;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .header a{
     color: whitesmoke;
     transition: all 0.7s ease-out;
@@ -75,6 +68,10 @@ header{
     display: block;
     text-align: left;
     font-size: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .dropdown:hover .dropbtn {
@@ -92,6 +89,37 @@ header{
 
 .dropdown-content a:hover{
     background-color: #ddd;
+}
+
+/************SITE MAP************/
+
+.site-map .site-map-list{
+    list-style-type: none;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+
+#border-bottom:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-top: 1.25rem;
+    width: 80%;
+}
+
+.site-map-list li{
+    padding-top: 2rem;
+}
+
+
+.site-map i{
+    padding-left: 1rem;
+}
+
+.site-map > h2{
+    padding-top: 0em;
 }
 
 /************MAIN****************/
@@ -146,6 +174,12 @@ h4{
     margin-right: 2rem;
 }
 
+.remaining-content-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
 .grades-list p{
     display: block;
     list-style-type: disc;
@@ -168,50 +202,6 @@ h4{
     display: block;
 }
 
-.demo1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-}
-
-/* .demo,.demo1,.demo2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-} */
-
-/* .footer{
-    background-color: #E8EDE1;
-} */
-
-.announcements .site-map{
-    list-style-type: none;
-    text-align: left;
-    padding-left: 1rem;
-}
-
-
-#border-bottom:after{
-    content: "";
-    display: block;
-    border-bottom: 1px solid black;
-    position: relative;
-    padding-top: 20px;
-    width: 80%;
-}
-
-.site-map li{
-    padding-top: 2rem;
-}
-
-/* .announcements,.my-courses,.my-grades,.my-tasks,.tools,.need-help{
-    background-color: #edc7b7;
-} */
-
-.announcements i{
-    padding-left: 1rem;
-}
-
 #mid-term-grading{
     text-align: center;
 }
@@ -227,7 +217,7 @@ h4{
 #more-announcements{
     display: inline-block;
     padding-left: 1rem;
-    padding-top: 1rem;
+    margin-top: 5rem;
 }
 
 #more-announcements:hover{
@@ -243,40 +233,22 @@ h4{
     text-decoration: underline;
 }
 
-table,td{
-    /* border: 1px solid black; */
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-right: 1rem;
-}
-
 .marks{
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
-
-/* 
-.announcements{
-    padding-top: 0px;
-    border: 0.1rem solid transparent;
-} */
-
-.announcements,.my-courses,.my-grades,.tools,.need-help,.my-tasks{
+.site-map,.my-courses,.my-grades,.tools,.need-help,.my-tasks{
     border: 0.1rem solid darkgoldenrod;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     box-shadow: 0.4rem 0.4rem #8a795d;
 
 }
 
-.announcements a:hover,.my-courses a:hover,.my-grades a:hover,.tools a:hover,.need-help a:hover,.my-tasks a:hover{
+.site-map a:hover,.my-courses a:hover,.my-grades a:hover,.tools a:hover,.need-help a:hover,.my-tasks a:hover{
     font-size:1.1rem;
     text-decoration: underline;
     color:darkblue;
-}
-
-.announcements > h2{
-    padding-top: 0em;
 }
 
 .tools,.need-help{
@@ -325,7 +297,6 @@ table,td{
     grid-template-columns: auto;
     background-color: #5D0013;
     height:auto;
-    /* margin-top: 1rem; */
 }
 
 .footer-content{
@@ -334,11 +305,6 @@ table,td{
     grid-gap: 10px;
     color: white;
 }
-
-/* .footer-content{
-    text-align: center;
-    font-size: 1.2rem;
-} */
 
 
 .about-us{
@@ -374,10 +340,6 @@ table,td{
     text-decoration: underline;
 }
 
-/* .about-us{
-    padding-bottom: 1rem;
-} */
-
 .blackboard-rights{
     margin-left: auto;
     margin-right: auto;
@@ -398,14 +360,12 @@ table,td{
     main{
         overflow: hidden;
         display: block;
-        /* grid-template-columns: 40% 60%; */
     }
      
     .demo1{
        display: block;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        /* margin-right: 1rem; */
     }
 
     .my-grades{
@@ -422,14 +382,7 @@ table,td{
         margin-bottom: 1rem;
     }
 
-    /* .need-help{
-        margin-right: 1rem;
+    .footer-content{
+        display: block;
     }
-
-    .my-grades{
-        margin-top: 3rem;
-    }
-
-    .tools{
-        margin-bottom: 3rem;
-    } */
+}
