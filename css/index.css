@@ -356,6 +356,20 @@ h4{
 
 @media only screen and (max-width:768px){
 
+    .header a{
+        display: block;
+        grid-template-columns: 1fr; 
+        list-style-type: none;
+        font-size: 1rem;
+    }    
+
+    .logo{
+        display: block;
+        width: 15rem;
+        padding-left: 10rem;
+    }
+
+
     main{
         overflow: hidden;
         display: block;
@@ -387,6 +401,18 @@ h4{
 }
 
 @media only screen and (max-width:40rem){
+
+    .header{
+        display: block;
+        list-style-type: none;
+
+    }    
+
+    .logo{
+        display: block;
+        width: 15rem;
+        padding-left: 10rem;
+    }
 
     main{
         overflow: hidden;
