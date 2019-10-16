@@ -99,16 +99,6 @@ header{
     padding-left: 1rem;
 }
 
-
-#border-bottom:after{
-    content: "";
-    display: block;
-    border-bottom: 1px solid black;
-    position: relative;
-    padding-top: 1.25rem;
-    width: 80%;
-}
-
 .site-map-list li{
     padding-top: 2rem;
 }
@@ -120,6 +110,15 @@ header{
 
 .site-map > h2{
     padding-top: 0em;
+}
+
+#border-bottom:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-top: 1.25rem;
+    width: 80%;
 }
 
 /************MAIN****************/
@@ -202,6 +201,63 @@ h4{
     display: block;
 }
 
+.marks{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.dot,.dot2{
+    height: 35px;
+    width: 35px;
+    background-color: none;
+    border-radius: 50%;
+    display: inline-block;
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+    margin-left: 1em;
+    justify-self: end;
+}  
+
+.site-map,.my-courses,.my-grades,.tools,.need-help,.my-tasks{
+    border: 0.1rem solid darkgoldenrod;
+    /* border-radius: 1rem; */
+    box-shadow: 0.4rem 0.4rem #8a795d;
+
+}
+
+.site-map a:hover,.my-courses a:hover,.my-grades a:hover,.tools a:hover,.need-help a:hover,.my-tasks a:hover{
+    font-size:1.1rem;
+    text-decoration: underline;
+    color:darkblue;
+}
+
+.tools,.need-help{
+    margin-top: 1rem;
+}
+
+.my-grades a:hover{
+    font-size: 1.2rem;
+}
+
+.my-grades p{
+    margin: 0;
+    padding:0;
+}
+
+.dot:hover{
+    background-color: #FFCCCC;
+    transform: scale(1.8);
+    background-color: orange;
+    font-size: 1.2rem;
+}
+
+.dot1:hover,.dot2:hover{
+    background-color: palegreen;
+}
+
+.dot3:hover{
+    background-color: yellow;
+}
+
 #mid-term-grading{
     text-align: center;
 }
@@ -233,63 +289,6 @@ h4{
     text-decoration: underline;
 }
 
-.marks{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.site-map,.my-courses,.my-grades,.tools,.need-help,.my-tasks{
-    border: 0.1rem solid darkgoldenrod;
-    /* border-radius: 1rem; */
-    box-shadow: 0.4rem 0.4rem #8a795d;
-
-}
-
-.site-map a:hover,.my-courses a:hover,.my-grades a:hover,.tools a:hover,.need-help a:hover,.my-tasks a:hover{
-    font-size:1.1rem;
-    text-decoration: underline;
-    color:darkblue;
-}
-
-.tools,.need-help{
-    margin-top: 1rem;
-}
-
-.my-grades a:hover{
-    font-size: 1.2rem;
-}
-
-.my-grades p{
-    margin: 0;
-    padding:0;
-}
-
-.dot,.dot2{
-  height: 35px;
-  width: 35px;
-  background-color: none;
-  border-radius: 50%;
-  display: inline-block;
-  transition: width 1s, height 1s, background-color 1s, transform 1s;
-  margin-left: 1em;
-  justify-self: end;
-}
-
-.dot:hover{
-    background-color: #FFCCCC;
-    transform: scale(1.8);
-    background-color: orange;
-    font-size: 1.2rem;
-}
-
-.dot1:hover,.dot2:hover{
-    background-color: palegreen;
-}
-
-.dot3:hover{
-    background-color: yellow;
-}
-
 /******FOOTER************/ 
 
 .footer{
@@ -305,7 +304,6 @@ h4{
     grid-gap: 10px;
     color: white;
 }
-
 
 .about-us{
     font-size: 1.5rem;
@@ -323,23 +321,6 @@ h4{
     font-size: 1.5rem;
 }
 
-.footer-section ul li a{
-    color: whitesmoke;
-}
-
-.footer-content ul li{
-    list-style-type: none;
-    padding-top: 0.1rem;
-}
-
-.about ul,.links ul,.connect ul{
-    margin: 0;
-}
-
-.footer-section ul li a:hover{
-    text-decoration: underline;
-}
-
 .blackboard-rights{
     margin-left: auto;
     margin-right: auto;
@@ -353,6 +334,23 @@ h4{
     color: rgba(255,255,255,0.6);
 }
 
+.footer-content ul li{
+    list-style-type: none;
+    padding-top: 0.1rem;
+}
+
+.about ul,.links ul,.connect ul{
+    margin: 0;
+}
+
+.footer-section ul li a{
+    color: whitesmoke;
+}
+
+.footer-section ul li a:hover{
+    text-decoration: underline;
+}
+
 /********* MEDIA QUERIES ***************/
 
 @media only screen and (max-width:768px){
@@ -362,7 +360,7 @@ h4{
         display: block;
     }
      
-    .demo1{
+    .remaining-content-section{
        display: block;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -377,7 +375,7 @@ h4{
         margin-right: 0;
     }
 
-    .demo{
+    .sitemap-section{
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -385,4 +383,38 @@ h4{
     .footer-content{
         display: block;
     }
+}
+
+@media only screen and (max-width:40rem){
+
+    main{
+        overflow: hidden;
+        display: block;
+    }
+     
+    .remaining-content-section{
+       display: block;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .my-grades{
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+
+    .tools{
+        margin-right: 0;
+    }
+
+    .sitemap-section{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-content{
+        display: block;
+    }
+
+
 }
