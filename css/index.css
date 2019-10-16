@@ -149,7 +149,7 @@ main{
     grid-template-columns: 16% 84%;
     grid-gap: 1rem;
     overflow: hidden;
-    background-image: url("../img/img6.JPG");  
+    background-image: url("../img/img6.jpg");  
     background-repeat: repeat-y;
     background-size: cover;
     background-position: center; 
